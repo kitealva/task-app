@@ -93,9 +93,8 @@ import {
       <Box pb={120}>
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
-            
-  
             <Group h="100%" gap={0} visibleFrom="sm">
+          
               <a href="#" className={classes.link}>
                 Home
               </a>
@@ -158,6 +157,11 @@ import {
             </Group>
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+            <Text hiddenFrom="sm" fw={700}>TASK</Text>
+            <Group hiddenFrom="sm" pr={5}>
+            <ActionToggle/>
+            </Group>
+            
           </Group>
         </header>
   
@@ -202,9 +206,12 @@ import {
               
               <Button variant="default">Log in</Button>
               <Button>Sign up</Button>
+              
             </Group>
           </ScrollArea>
+          
         </Drawer>
+      
       </Box>
     );
   }

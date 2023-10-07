@@ -98,6 +98,13 @@ import {
               <a href="#" className={classes.link}>
                 Home
               </a>
+  
+              <a href="#" className={classes.link}>
+                Learn
+              </a>
+              <a href="#" className={classes.link}>
+                Academy
+              </a>
               <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
                 <HoverCard.Target>
                   <a href="#" className={classes.link}>
@@ -112,7 +119,6 @@ import {
                     </Center>
                   </a>
                 </HoverCard.Target>
-  
                 <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                   <Group justify="space-between" px="md">
                     <Text fw={500}>Features</Text>
@@ -142,12 +148,6 @@ import {
                   </div>
                 </HoverCard.Dropdown>
               </HoverCard>
-              <a href="#" className={classes.link}>
-                Learn
-              </a>
-              <a href="#" className={classes.link}>
-                Academy
-              </a>
             </Group>
   
             <Group visibleFrom="sm">
@@ -181,6 +181,12 @@ import {
             <a href="#" className={classes.link}>
               Home
             </a>
+            <a href="#" className={classes.link}>
+              Learn
+            </a>
+            <a href="#" className={classes.link}>
+              Academy
+            </a>
             <UnstyledButton className={classes.link} onClick={toggleLinks}>
               <Center inline>
                 <Box component="span" mr={5}>
@@ -193,12 +199,6 @@ import {
               </Center>
             </UnstyledButton>
             <Collapse in={linksOpened}>{links}</Collapse>
-            <a href="#" className={classes.link}>
-              Learn
-            </a>
-            <a href="#" className={classes.link}>
-              Academy
-            </a>
   
             <Divider my="sm" />
   

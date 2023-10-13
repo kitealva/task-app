@@ -151,7 +151,7 @@ import {
   
             <Group visibleFrom="sm">
             <ActionToggle />
-            <Link href='/test2'><Button variant="default">Log in</Button></Link>
+            <Link href='/authentication'><Button variant="default">Log in</Button></Link>
             <Link href='/test3'><Button>Sign up</Button></Link>
             </Group>
   

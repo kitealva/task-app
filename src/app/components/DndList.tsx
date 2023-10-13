@@ -5,11 +5,11 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import classes from '../compcss/DndList.module.css'
 
 const data = [
-  { position: 6, mass: 12.011, symbol: 'C', name: 'Carbon' },
-  { position: 7, mass: 14.007, symbol: 'N', name: 'Nitrogen' },
-  { position: 39, mass: 88.906, symbol: 'Y', name: 'Yttrium' },
-  { position: 56, mass: 137.33, symbol: 'Ba', name: 'Barium' },
-  { position: 58, mass: 140.12, symbol: 'Ce', name: 'Cerium' },
+  { due: '10/14/2023', date: '10/13/23', symbol: 'L', name: 'Laundry' },
+  { due:'12/22/23', date: '10/02/23', symbol: 'TP', name: 'Task Project' },
+  { due:'--', date: '01/01/22', symbol: 'G', name: 'Gym' },
+  { due:'10/09/23', date: '10/03/23', symbol: 'MP', name: 'Meal Prep' },
+  { due: '10/20/23', date: '10/14/23', symbol: 'TM', name: 'Team Meeting' },
 ];
 
 export function DndList() {
@@ -28,7 +28,7 @@ export function DndList() {
           <div>
             <Text>{item.name}</Text>
             <Text c="dimmed" size="sm">
-              Position: {item.position} • Mass: {item.mass}
+            Created {item.date} | Due {item.due}
             </Text>
           </div>
         </div>

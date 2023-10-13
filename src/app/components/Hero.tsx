@@ -1,8 +1,8 @@
-'use client'
-import { Image, Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
+import { Container, Title, Button, Group, Text, List, ThemeIcon, rem } from '@mantine/core';
 import { IconCheck } from '@tabler/icons-react';
 
 import classes from '../compcss/HeroBullets.module.css'
+import { DndList } from './DndList';
 
 export function HeroBullets() {
   return (
@@ -50,7 +50,9 @@ export function HeroBullets() {
             </Button>
           </Group>
         </div>
-        <p>test</p>
+        <Group visibleFrom='md'>
+        <DndList />
+        </Group>
       </div>
     </Container>
   );

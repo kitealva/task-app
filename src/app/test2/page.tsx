@@ -1,9 +1,12 @@
-const Test = () => {
+'use client'
+import { AuthenticationTitle } from "../components/LogIn"
+import NavBar from "../components/NavBar"
+export default function Home() {
   return (
-    <div>tes</div>
-
-
+    <main>
+      <NavBar />
+      <AuthenticationTitle />
+    </main>
+    
   )
 }
-
-export default Test

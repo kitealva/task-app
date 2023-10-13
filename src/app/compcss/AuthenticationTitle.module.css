@@ -1,0 +1,5 @@
+.title {
+    margin-top: rem(100px);
+    font-family: Greycliff CF, var(--mantine-font-family);
+    font-weight: 900;
+  }

@@ -1,5 +1,4 @@
-'use client';
-
+import Link from "next/link";
 import {ActionToggle} from "../components/NavButton";
 import React from "react";
 import {
@@ -95,7 +94,7 @@ import {
           <Group justify="space-between" h="100%">
             <Group h="100%" gap={0} visibleFrom="sm">
           
-              <a href="#" className={classes.link}>
+              <a href="/" className={classes.link}>
                 Home
               </a>
   
@@ -152,8 +151,8 @@ import {
   
             <Group visibleFrom="sm">
             <ActionToggle />
-              <Button variant="default">Log in</Button>
-              <Button>Sign up</Button>
+            <Link href='/test2'><Button variant="default">Log in</Button></Link>
+            <Link href='/test3'><Button>Sign up</Button></Link>
             </Group>
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />

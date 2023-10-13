@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { Button } from '@mantine/core'
 import NavBar from "./components/NavBar"
+import { HeroBullets } from "./components/Hero"
 
 export default function Home() {
   return (
     <main>
       <NavBar />
+      <HeroBullets />
     </main>
     
   )

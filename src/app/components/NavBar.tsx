@@ -31,7 +31,7 @@ import {
     IconCoin,
     IconChevronDown,
   } from '@tabler/icons-react';
-  import classes from './HeaderMegaMenu.module.css';
+  import classes from '../compcss/HeaderMegaMenu.module.css'
   
   const mockdata = [
     {
@@ -90,7 +90,7 @@ import {
     ));
   
     return (
-      <Box pb={120}>
+      <Box>
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
             <Group h="100%" gap={0} visibleFrom="sm">

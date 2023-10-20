@@ -1,9 +1,13 @@
-import React from 'react'
+'use client'
+import AccountCreation from '@/app/components/Create'
+import NavBar from '@/app/components/NavBar'
 
-const page = () => {
+export default function Create() {
   return (
-    <div>page</div>
+    <main>
+      <NavBar />
+      <AccountCreation />
+    </main>
+    
   )
 }
-
-export default page

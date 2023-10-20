@@ -108,7 +108,7 @@ import {
                 <HoverCard.Target>
                   <a href="#" className={classes.link}>
                     <Center inline>
-                      <Box component="span" mr={5}>
+                      <Box component="span" mr={6}>
                         Features
                       </Box>
                       <IconChevronDown
@@ -118,7 +118,7 @@ import {
                     </Center>
                   </a>
                 </HoverCard.Target>
-                <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+                <HoverCard.Dropdown style={{ overflow: 'hidden'}}>
                   <Group justify="space-between" px="md">
                     <Text fw={500}>Features</Text>
                     <Anchor href="#" fz="xs">

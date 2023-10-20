@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import {
     TextInput,
     PasswordInput,
@@ -13,27 +12,25 @@ import {
   } from '@mantine/core';
   import classes from '../compcss/AuthenticationTitle.module.css'
   
-  export function AuthenticationTitle() {
+  export function Login() {
     return (
       <Container size={420} my={40}>
         <Title ta="center" className={classes.title}>
-          Hello User!
+          Welcome back!
         </Title>
         <Text c="dimmed" size="sm" ta="center" mt={5}>
           Do not have an account yet?{' '}
-          
-          <Anchor href="authentication/create" size="sm">
+          <Anchor size="sm" href="authentication/create">
             Create account
           </Anchor>
-          
         </Text>
   
         <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-          <TextInput label="Email" placeholder="you@gmail.com" required />
-          <PasswordInput label="Password" placeholder="Password" required mt="md" />
+          <TextInput label="Email" placeholder="you@mantine.dev" required />
+          <PasswordInput label="Password" placeholder="Your password" required mt="md" />
           <Group justify="space-between" mt="lg">
             <Checkbox label="Remember me" />
-            <Anchor component="button" size="sm" >
+            <Anchor component="button" size="sm">
               Forgot password?
             </Anchor>
           </Group>
@@ -44,3 +41,5 @@ import {
       </Container>
     );
   }
+
+  export default Login

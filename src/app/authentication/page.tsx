@@ -1,11 +1,11 @@
 'use client'
-import { AuthenticationTitle } from "../components/LogIn"
+import Login from '../components/Login'
 import NavBar from "../components/NavBar"
-export default function Home() {
+export default function Authentication() {
   return (
     <main>
       <NavBar />
-      <AuthenticationTitle />
+      <Login />
     </main>
     
   )

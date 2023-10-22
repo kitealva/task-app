@@ -29,6 +29,10 @@ import {
     IconFingerprint,
     IconCoin,
     IconChevronDown,
+    IconUser,
+    IconSquarePlus,
+    IconBrandGithub,
+    IconBell,
   } from '@tabler/icons-react';
   import classes from '../compcss/HeaderMegaMenu.module.css'
   
@@ -92,13 +96,12 @@ import {
       <Box>
         <header className={classes.header}>
           <Group justify="space-between" h="100%">
-            <Group h="100%" gap={0} visibleFrom="sm">
+            <Group h="100%" gap={0} visibleFrom="sm" >
           
               <a href="/" className={classes.link}>
                 Home
               </a>
-  
-              <a href="#" className={classes.link}>
+              <a href="/authentication" className={classes.link}>
                 Learn
               </a>
               <a href="#" className={classes.link}>
@@ -106,8 +109,8 @@ import {
               </a>
               <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
                 <HoverCard.Target>
-                  <a href="#" className={classes.link}>
-                    <Center inline>
+                  <a href="#" className={classes.link} >
+                    <Center inline >
                       <Box component="span" mr={6}>
                         Features
                       </Box>
@@ -148,11 +151,32 @@ import {
                 </HoverCard.Dropdown>
               </HoverCard>
             </Group>
+            <Group visibleFrom="sm">NAME</Group>
   
-            <Group visibleFrom="sm">
-            <ActionToggle />
-            <Link href='/authentication'><Button variant="default">Log in</Button></Link>
-            <Link href='/test3'><Button>Sign up</Button></Link>
+            <Group visibleFrom="sm" style={{marginInline: rem(5)}}>
+            <a href="/authentication" className={classes.link}>
+            <IconBrandGithub></IconBrandGithub>
+            </a>
+            <a href="/authentication" className={classes.link}>
+            <IconBell></IconBell>
+            </a>
+            <a href="/authentication" className={classes.link}>
+            <IconSquarePlus></IconSquarePlus>
+            </a>
+            <a href="/authentication" className={classes.link}>
+            <IconUser></IconUser>
+            </a>
+            <br></br>
+            <Drawer
+            opened={drawerOpened}
+            onClose={closeDrawer}
+            title="Authentication"
+            position="right"
+          
+            >
+            {/* Drawer content */}
+            </Drawer>
+            <Burger opened={drawerOpened} onClick={toggleDrawer} size="md" />
             </Group>
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
@@ -204,8 +228,8 @@ import {
             <Group justify="center" grow pb="xl" px="md">
               
               <Button variant="default">Log in</Button>
-              <Button>Sign up</Button>
               
+              <Button>Sign up</Button>
             </Group>
           </ScrollArea>
           

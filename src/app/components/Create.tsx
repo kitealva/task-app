@@ -78,7 +78,7 @@ import {
         <Text c="dimmed" size="sm" ta="center" mt={5}>
           Have an Account? {' '}
           
-          <Anchor href="authentication/create" size="sm">
+          <Anchor href="/authentication" size="sm">
             Log in
           </Anchor>
           
@@ -109,9 +109,7 @@ import {
         )}
 
         </div>
-          <Group justify="space-between" mt="lg">
-            <Checkbox label="Remember me" />
-          </Group>
+          
           <Button fullWidth mt="xl">
             Create
           </Button>

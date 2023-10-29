@@ -34,9 +34,13 @@ import {
               Forgot password?
             </Anchor>
           </Group>
+          <br />
+          
           <Button fullWidth mt="xl">
             Sign in
           </Button>
+          <br />
+          
         </Paper>
       </Container>
     );

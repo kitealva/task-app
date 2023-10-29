@@ -16,7 +16,7 @@ import {
   import classes from '../compcss/AuthenticationTitle.module.css'
 
   import { useInputState } from '@mantine/hooks';
-  import { IconCheck, IconX } from '@tabler/icons-react';
+  import { IconCheck, IconLock, IconX } from '@tabler/icons-react';
   import { useState } from 'react';
 
   function PasswordRequirement({ meets, label }: { meets: boolean; label: string }) {
@@ -109,9 +109,10 @@ import {
         )}
 
         </div>
-          
+          <br />
           <Button fullWidth mt="xl">
-            Create
+            
+             Create Account
           </Button>
         </Paper>
       </Container>

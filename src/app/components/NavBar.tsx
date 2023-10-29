@@ -33,6 +33,8 @@ import {
     IconSquarePlus,
     IconBrandGithub,
     IconBell,
+    IconArrowNarrowRight,
+    IconLock,
   } from '@tabler/icons-react';
   import classes from '../compcss/HeaderMegaMenu.module.css'
   
@@ -102,17 +104,17 @@ import {
                 Home
               </a>
               <a href="/authentication" className={classes.link}>
-                Learn
+                About
               </a>
               <a href="#" className={classes.link}>
-                Academy
+                Purpose
               </a>
               <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
                 <HoverCard.Target>
                   <a href="#" className={classes.link} >
                     <Center inline >
                       <Box component="span" mr={6}>
-                        Features
+                        More
                       </Box>
                       <IconChevronDown
                         style={{ width: rem(16), height: rem(16) }}
@@ -139,34 +141,44 @@ import {
                     <Group justify="space-between">
                       <div>
                         <Text fw={500} fz="sm">
-                          Get started
+                          Create now!
                         </Text>
                         <Text size="xs" c="dimmed">
-                          Their food sources have decreased, and their numbers
+                          Start creating your own tasks and reminders here! 
                         </Text>
+                        
                       </div>
+                      <a href="/authentication/create" className={classes.rightLink}>
                       <Button variant="default">Get started</Button>
+                      </a>
                     </Group>
                   </div>
                 </HoverCard.Dropdown>
               </HoverCard>
             </Group>
-            <Group visibleFrom="sm">NAME</Group>
+
+            <Group visibleFrom="sm">Tasks</Group>
   
             <Group visibleFrom="sm" style={{marginInline: rem(5)}}>
-            <a href="/authentication" className={classes.link}>
+              
+            <a href="https://github.com/kitealva/task-app" className={classes.rightLink}>
             <IconBrandGithub></IconBrandGithub>
             </a>
-            <a href="/authentication" className={classes.link}>
+
+            <a href="/authentication" className={classes.rightLink}>
             <IconBell></IconBell>
             </a>
-            <a href="/authentication" className={classes.link}>
+
+            <a href="/authentication" className={classes.rightLink}>
             <IconSquarePlus></IconSquarePlus>
             </a>
-            <a href="/authentication" className={classes.link}>
+
+            <a href="/authentication" className={classes.rightLink}>
             <IconUser></IconUser>
             </a>
+            
             <br></br>
+
             <Drawer
             opened={drawerOpened}
             onClose={closeDrawer}
@@ -176,10 +188,12 @@ import {
             >
             {/* Drawer content */}
             </Drawer>
+            
             <Burger opened={drawerOpened} onClick={toggleDrawer} size="md" />
             </Group>
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+
             <Text hiddenFrom="sm" fw={700}>TASK</Text>
             <Group hiddenFrom="sm" pr={5}>
             <ActionToggle/>
@@ -196,7 +210,7 @@ import {
           title="Navigation"
           hiddenFrom="sm"
           zIndex={1000000}
-          
+
         >
           <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
             <Divider my="sm" />
@@ -205,15 +219,15 @@ import {
               Home
             </a>
             <a href="#" className={classes.link}>
-              Learn
+              About
             </a>
             <a href="#" className={classes.link}>
-              Academy
+              Purpose
             </a>
             <UnstyledButton className={classes.link} onClick={toggleLinks}>
               <Center inline>
                 <Box component="span" mr={5}>
-                  Features
+                  More
                 </Box>
                 <IconChevronDown
                   style={{ width: rem(16), height: rem(16) }}
@@ -227,9 +241,18 @@ import {
   
             <Group justify="center" grow pb="xl" px="md">
               
-              <Button variant="default">Log in</Button>
               
-              <Button>Sign up</Button>
+              <Button 
+              component="a"
+              href="/authentication"
+              variant="default"
+              >
+                Log in
+              </Button>
+              <Button
+              component="a"
+              href="/authentication/create"
+              >Sign up</Button>
             </Group>
           </ScrollArea>
           

@@ -10,11 +10,10 @@ export function HeroBullets() {
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
-            A <span className={classes.highlight}>modern</span> React <br /> components library
+            Welcome to <span className={classes.highlight}>Tasks</span> my <br /> Task Creation App!
           </Title>
           <Text c="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
+            Create tasks, set reminders and share with your friends!
           </Text>
 
           <List
@@ -28,26 +27,24 @@ export function HeroBullets() {
             }
           >
             <List.Item>
-              <b>TypeScript based</b> – build type safe applications, all components and hooks
-              export types
+              <b>New & Unique</b> – The goal with Tasks is to create a fun and unique task creation experience!
             </List.Item>
             <List.Item>
-              <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-              any project
-            </List.Item>
-            <List.Item>
-              <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-              keyboard
+              <b>Free & in Beta</b> – This project will be periodically updated and maintained for a great task creation experience!
             </List.Item>
           </List>
 
           <Group mt={30}>
+          <a href='/authentication/create'>
             <Button radius="xl" size="md" className={classes.control}>
               Get started
             </Button>
+            </a>
+            <a href='https://github.com/kitealva/task-app'>
             <Button variant="default" radius="xl" size="md" className={classes.control}>
               Source code
             </Button>
+            </a>
           </Group>
         </div>
         <Group visibleFrom='md'>
